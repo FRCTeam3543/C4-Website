@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="/img/4-Icon.png">
+  <title>C4 Robotics | Team 3543</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/sites/C4/css/extra/bootstrap-theme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> <!-- Social Icons -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<a name="Top"></a>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">
+    <img src="/img/RoboticsLogo-5.png" width="200" height="50" alt="">
+  </a>
+</nav>
+</div>
+      
+  <ul class="nav navbar-nav">
+    <li><a href="#Sponsors">Sponsors</a></li>
+    <li><a href="#Events">Events</a></li>
+    <li><a href="#Community">Community</a></li>
+    <li><a href="#Contact">Contact Us</a></li>
+    <li><a class="schedule-link" href="Schedule.html">Team Schedule</a></li>
+  </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- This is the signup button -->
+      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-user"></span> Team Sign Up</button>
+          <div id="id02" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php">
+              
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>The account system is for the organisation of team members and provides no difference for public users.</p>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label class="remember">
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn01">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+      <!-- This is the login button -->
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-log-in"></span> Team Login</button>
+          <div id="id01" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php">
+              
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                
+                <label class="remember">
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+    </ul>
+  </div>
+</nav>
+  
+<div class="inner-content">
+  <div>
+    <figure>
+      <img class="c4img" src="/img/Cudmore.jpg">
+      <figcaption class="c4-caption">2018 Barrie Competition<br>Founding Mentor Peter Cudmore</figcaption>
+    </figure>  
+        <h1 class="c4home">Team 3543</h1>
+          <div class="c4text">
+            <p>
+            C4 Robotics was founded in 2010 when a group of students came to Peter Cudmore with the idea to create a team and participate in FIRST Logomotion.
+            <br>
+            <br>
+            Team 3543 (C4 Robotics) is now an FRC team from Arnprior District High School located in Arnprior, Ontario. Our mission, to inspire students and teachers to take part in engineering and science to prove that anyone can do anything once they set their minds to it.
+            <br>
+            </p>
+    </div>
+</div>
+
+    <div class="btn awards">
+    <!-- <div class="awards-container" style="padding: 40px"> -->
+      <button class="collapsible" id="AwardBTN">Team Awards<br><span class="glyphicon glyphicon-menu-down"</span></button>
+      
+        <div class="awards-content">
+          
+          <img class="award-photos" src="https://via.placeholder.com/200x300">
+          <img class="award-photos" src="https://via.placeholder.com/200x300">
+          <img class="award-photos" src="https://via.placeholder.com/200x300">
+          <img class="award-photos" src="https://via.placeholder.com/200x300">
+          
+
+        </div>
+      </div>
+   <!-- </div> -->
+    
+
+  <div class="clear"></div>
+  <hr class="hr">
+
+<div>
+    <a name="Sponsors"></a>
+      <h3 class="sponsors-header">Our 2017-2018 Sponsors</h3>
+       <p>
+      Every year our team needs to cover the costs of necessities like the competition entry fee, workshop equipment, and travel. <br>
+      Without our generous sponsors ... 
+      
+      </p>
+        <div class=".slideshow-container"> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+   
+      <!-- Images must be 950x200 -->
+      <div class="carousel-inner">
+        <!-- Gold -->
+        <div class="item active">
+          <a href="https://www.opg.com/Pages/home.aspx"> <img src="/img/sponsor_logos/2018/01_Gold/OPG_logo-1.png"  style="width:100%;"> </a>
+        </div>
+  
+        <div class="item">
+          <a href="https://www.rcdsb.on.ca/"> <img src="/img/sponsor_logos/2018/01_Gold/RCDSB_horizontal-1.png" style="width:100%;"> </a>
+        </div>
+  
+        <div class="item">
+          <a href="http://www.deerfencecanada.ca/"> <img src="/img/sponsor_logos/2018/01_Gold/DeerFence_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <!-- Silver -->
+        <div class="item">
+          <a href=""> <img src="/img/sponsor_logos/2018/02_Silver/benoit_saumier-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="https://carleton.ca/"> <img src="/img/sponsor_logos/2018/02_Silver/CarletonUniversity_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="https://www.getontrac.ca/arnprior-home/"> <img src="/img/sponsor_logos/2018/02_Silver/ontrac_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <!-- Bronze -->
+        <div class="item">
+          <a href="https://www.ibew586.org/"> <img src="/img/sponsor_logos/2018/03_Bronze/IBEW_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="http://www.lionsclubs.org/EN/index.php"> <img src="/img/sponsor_logos/2018/03_Bronze/lion_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="https://www.rona.ca/en/Rona-m-sullivan-son-limited-arnprior-arnprior"> <img src="/img/sponsor_logos/2018/03_Bronze/Rona_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="http://www.reidbros.ca/"> <img src="/img/sponsor_logos/2018/03_Bronze/ReidBros_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="http://www.sullivan.ca/"> <img src="/img/sponsor_logos/2018/03_Bronze/sullivan_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="https://nutechpm.com/"> <img src="/img/sponsor_logos/2018/03_Bronze/NU-TECH_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="http://www.mamarosaarnprior.ca/index.html"> <img src="/img/sponsor_logos/2018/03_Bronze/MamaRosa_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <div class="item">
+          <a href="http://www.gilks.ca/"> <img src="/img/sponsor_logos/2018/03_Bronze/Gilks_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <!-- Contributor -->
+        <div class="item">
+          <a href="https://www.curtisswright.com/home/default.aspx"> <img src="/img/sponsor_logos/2018/04_Contributor/CurtissWright_logo-1.png" style="width:100%;"> </a>
+        </div>
+        
+        <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      
+      </div>
+      </div>
+    <div class="btn awards">
+    <!-- <div class="awards-container" style="padding: 40px"> -->
+      <button class="collapsible">Become a Sponsor<br><span class="glyphicon glyphicon-menu-down"</span></button>
+      
+        <div class="awards-content" style="overflow: hidden;">
+          
+          <p></p>
+          
+          
+        </div>
+      </div>
+  <div class="clear"></div>
+  <hr class="hr">
+<div>
+  <a name="Events"></a>  
+  <h3 class="event-header">Current Event</h3>
+  <div class="event-content">
+    <div class="VideoWrapper">
+      <iframe class="Event-Trailer" width="992" height="558" src="https://www.youtube.com/embed/pdGgp1NIvL0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>   
+    <img class="EventPhoto1" src="/img/Event Photos/2019/DeepSpace_logo-1.png">
+    <img class="EventPhoto2"src="/img/Event Photos/frc_competition-1.jpg">
+    
+    <div class="clear"></div>
+  </div>
+    <div class="darkbtn">
+    <a href="Past-Events.html"><button class="btn success past">Past Events</button></a>
+    </div>
+</div>
+  <div class="clear"></div>
+  <hr class="hr">
+  
+<div>
+  <a name="Community"></a>
+  <div class="community-header">
+  <h3 class="in-the-community">3543 In The Community</h3>
+    <figure class="CommunityPhoto1">
+        <img class="CommunityPhoto1" src="https://via.placeholder.com/450x280">
+        <figcaption class="CommunityPhoto1-Caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption>
+    </figure>
+    <figure class="CommunityPhoto2">
+      <img class="CommunityPhoto2" src="https://via.placeholder.com/450x280">
+      <figcaption class="CommunityPhoto2-Caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption>
+    </figure>
+    <figure class="CommunityPhoto3">
+      <img class="CommunityPhoto3" src="https://via.placeholder.com/450x280">
+      <figcaption class="CommunityPhoto3-Caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption>
+    </figure>
+    <figure class="CommunityPhoto4">
+      <img class="CommunityPhoto4" src="https://via.placeholder.com/450x280">
+      <figcaption class="CommunityPhoto4-Caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption>
+    </figure>
+  </div>
+  <br> 
+</div>
+
+  <div class="clear"></div>
+  <hr class="hr">
+  
+<div>  
+    <h3 class="social-header">Stay Connected</h3>   
+    <a class="twitter-grid" data-lang="en" data-limit="20" data-partner="tweetdeck" href="https://twitter.com/MoistBreadstick/timelines/1033432548024758272?ref_src=twsrc%5Etfw">First Robotics Canada</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <br> 
+</div>
+  
+</div>
+</div>
+</div>
+</body>
+
+
+<footer class="footer">
+  <a name="Contact"></a>
+  <h5>C4 Robotics | Team 3543</h5>
+  
+  <section id="lab_social_icon_footer">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+          <div class="text-center center-block">
+                  <a href="https://www.facebook.com/ADHSC4Robotics/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                  <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                  <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-yt" class="fab fa-youtube fa-3x social"></i></a>
+                  <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+  </div>
+  </section>
+  <h5>Contact Us | example@gmail.com | ###-###-#### </h5>
+  <a href="#Top"><h5>Back To Top</h5></a>
+</footer>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+
+</html>

@@ -1,0 +1,921 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.navbar.navbar-inverse {
+    border-radius: 0px 0px 5px 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+    max-width: 100%;
+}
+
+.container-fluid{
+    /* background-color: #181C1F;
+     * Darker navbar background that matches the footer
+     */
+}
+
+.schedule-link {
+    visibility: hidden;
+}
+
+ul.nav.navbar-nav li {
+    font-size: 20px;
+    color: white;
+    padding-top: 30px;
+}
+
+ul.nav.navbar-nav.navbar-right button{
+    font-size: 18px;
+    color: white;
+    opacity: 0.5;
+    padding-top: 25px;
+    background-color: transparent;
+     
+}
+
+ul.nav.navbar-nav.navbar-right button:hover {
+   opacity: 1;
+}
+
+ul.nav.navbar-nav.navbar-right div.container {
+    font-size: 15px;
+    color: black;
+    opacity: 1;
+    padding: 12px 20px;
+}
+
+.remember {
+    font-weight: normal;
+}
+
+ul.nav.navbar-nav.navbar-right div.container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    opacity: 1;
+    
+}
+
+ul.nav.navbar-nav.navbar-right button {
+    border: none;  
+}
+
+ul.nav.navbar-nav.navbar-right div.container .cancelbtn01 {
+    background-color: #f44336;
+    width: 50%;
+    float: left;
+}
+
+ul.nav.navbar-nav.navbar-right div.container .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 300px) {
+    ul.nav.navbar-nav.navbar-right div.container .cancelbtn01, ul.nav.navbar-nav.navbar-right div.container .signupbtn {
+       width: 100%;
+    }
+}
+
+ul.nav.navbar-nav.navbar-right div.container button:hover {
+    opacity: 0.8;
+}
+
+ul.nav.navbar-nav.navbar-right div.container .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+/* Defines characteristics of everything on the main page
+ * ...where everything is positioned
+ */
+.inner-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.c4-home-text {
+    
+}
+
+.c4img {
+    float: left;
+    padding: 50px 25px 5px 25px;
+    max-width: 500px;
+    max-height: 700px;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    float: left;
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+    padding: 10px 25px 15px 25px;
+    display: table-caption;
+    caption-side: bottom;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.c4home {
+    font-family: serif;
+    position: relative;
+    padding: 50px 0px 0px 100px;
+    font-size: 50px;
+    max-width: 1500px; 
+}
+
+.c4text { 
+    padding: 0px 75px 5px 75px;
+    position: relative;
+    font-size: 16px;
+    max-height: 350px;
+    width: auto;
+    max-width: 1500px;
+    margin-bottom: 45px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .c4home {
+        float: none;
+        clear: both;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .c4img {
+        max-width: 995px;
+        max-height: 750px;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .c4text {
+        padding: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .c4home {
+       padding: 0px;
+    }
+    
+}
+
+.collapsible {
+    border: 2px solid #343A40;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+    padding-bottom: 5px;
+    outline: none;
+    visibility: visible;
+    margin-top: 15px;
+    
+}
+
+button.active, .collapsible:hover {
+    background-color: #343A40;
+    color: white;
+    opacity: 1;
+}
+
+.awards-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #343A40;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 100px;
+    visibility: visible;
+    
+}
+
+.award-photos {
+    width: 33%;
+    height: auto;
+    padding: 15px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .award-photos {
+        width: 33%;
+        height: auto;
+        padding: 15px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .award-photos {
+       width: 50%;
+       padding-bottom: 5px;
+       padding-top: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .award-photos {
+       width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .awards-content {
+       width: 100%;
+       overflow: scroll;
+    }
+    
+}
+
+/* Make sure this is hidden, if not it creates a button effect around the entire div */
+.btn.awards {
+    clear: both;
+    text-align: center;
+    display: block;
+    visibility: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sponsors-header {
+    font-family: serif;
+    position: relative;
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+
+
+/* Slideshow */
+
+script img {
+  height: 200px;
+  max-width: 950px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 200px;
+  border-radius: 10px;
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+  background-color: #f5f5f5;
+  opacity: 0.2;
+  margin-bottom: 0px;
+}
+
+.carousel-inner {
+  height: 200px;
+  border-radius: 10px;
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+  background-color: #f5f5f5;
+  margin-bottom: 0px;
+}
+
+.item img {
+  height: 200px;
+  max-width: 950px;
+}
+
+.item.active img {
+ height: 200px;
+ max-width: 950px;
+}
+
+.carousel-inner > .item > img {
+  height: 200px;
+  max-width: 950px;
+  padding: 0px;
+}
+
+/* The indicators stay hidden */
+.carousel-indicators {
+  visibility: hidden;
+}
+
+data-slide-to {
+  height: 200px;  
+  
+}
+
+#myCarousel {
+  height: 200px;  
+}
+
+@media screen and (max-width: 950px) {
+    .item.active img {
+        max-width: 950px;
+        max-height: 200px;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .item img {
+        max-width: 950px;
+        max-height: 200px;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel-inner {
+        max-width: 1000px;
+        max-height: 200px;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+}
+
+#myCoursel {
+  height: 200px;
+  max-width: 950px;
+  
+}
+
+a.left.carousel-control background {
+    opacity: 0.2;
+}
+
+a.right.carousel-control background {
+    opacity: 0.2;
+}
+
+
+
+/* real nice button */
+
+.darkbtn {
+  visibility: hidden;
+}
+
+.btn.success.past {
+    border: 2px solid #343A40;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 35px auto;
+    display: block;
+    text-decoration: none;
+    visibility: visible;
+}
+
+.btn.success.past:hover {
+    background-color: #343A40;
+    color: white;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn.success.past a {
+    visibility: hidden;
+}
+
+/* Event stuff */
+
+
+
+.event-header {
+    font-family: serif;
+    position: relative;
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.event-content img{
+    border-radius: 5px;
+}
+
+.EventPhoto1 {
+    float: left;
+}
+
+.EventPhoto2 {
+    float: right;
+}
+
+@media screen and (max-width: 937px) {
+    .EventPhoto1 {
+        
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 937px) {
+    .EventPhoto2 {
+       
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .EventPhoto1 {
+        max-width: 500px;
+        max-height: 315px;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .EventPhoto2 {
+        max-width: 500px;
+        max-height: 315px;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+}
+
+
+.VideoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-bottom: 15px;
+}
+
+.VideoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Community Stuff */
+
+.in-the-community {
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-family: serif;
+    position: relative;
+    font-size: 50px;
+}
+
+.CommunityPhoto1-Caption {
+    width: 450px;
+    font-size: 16px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.CommunityPhoto2-Caption {
+    width: 450px;
+    font-size: 16px;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.CommunityPhoto3-Caption {
+    width: 450px;
+    font-size: 16px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.CommunityPhoto4-Caption {
+    width: 450px;
+    font-size: 16px;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 936px) {
+    .CommunityPhoto1-Caption{
+        max-width: 890px;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+       
+    }
+    
+}
+
+@media screen and (max-width: 936px) {
+    .CommunityPhoto2-Caption{
+        max-width: 890px;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+       
+    }
+    
+}
+@media screen and (max-width: 936px) {
+    .CommunityPhoto3-Caption{
+        max-width: 890px;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+       
+    }
+    
+}
+@media screen and (max-width: 936px) {
+    .CommunityPhoto4-Caption{
+        max-width: 890px;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+       
+    }
+    
+}
+.CommunityPhoto1 {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.CommunityPhoto2 {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.CommunityPhoto3 {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.CommunityPhoto4 {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 937px) {
+    .CommunityPhoto1 {
+        
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 937px) {
+    .CommunityPhoto2 {
+       
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 937px) {
+    .CommunityPhoto3 {
+       
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 937px) {
+    .CommunityPhoto4 {
+       
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .CommunityPhoto1 {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .CommunityPhoto2 {
+        max-width: 500px;  
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .CommunityPhoto3 {
+        max-width: 500px; 
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .CommunityPhoto4 {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+}
+
+
+/* Social stuff */
+
+.social-header {
+    font-family: serif;
+    position: relative;
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #181C1F;
+    height: 175px;
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    color: white;
+    clear: both;
+    float: left;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0;
+    margin-top: 120px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+@media screen and (max-width: 330px) {
+    .footer {
+       height: 200px;
+    }
+    
+}
+
+/* Social Media stuff for footer */
+
+
+lab_social_icon_footer {
+  padding: 75px 0;
+  background-color: #dedede;
+  position: absolute;
+}
+
+#lab_social_icon_footer {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-yt:hover {
+  color: #bb0000;
+  
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}
+
+/* Past Events */
+.tmp-paragraph {
+    text-align: center;
+}
+
+.footer h5 {
+    color: #8B939B;
+    overflow: auto;
+}
+
+.footer h6 {
+    color: #8B9396;
+    
+}
+
