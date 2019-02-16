@@ -377,6 +377,10 @@ button.active, .collapsible:hover {
     text-align: center;
 }
 
+.sponsor-text {
+    
+    
+}
 
 
 /* Slideshow */
@@ -617,38 +621,43 @@ a.right.carousel-control background {
 
 .CommunityPhoto1-Caption {
     width: 450px;
-    font-size: 16px;
+    font-size: 26px;
     float: left;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 5px;  
+    padding-top: 70px;
 }
 
 .CommunityPhoto2-Caption {
     width: 450px;
-    font-size: 16px;
+    font-size: 22px;
     float: right;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 5px;  
+    
 }
 
 .CommunityPhoto3-Caption {
     width: 450px;
-    font-size: 16px;
+    font-size: 26px;
     float: left;
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 5px;
+    
+    padding-top: 70px;
 }
 
 .CommunityPhoto4-Caption {
     width: 450px;
-    font-size: 16px;
+    font-size: 22px;
     float: right;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 5px; 
+    
 }
 
 @media screen and (max-width: 936px) {
